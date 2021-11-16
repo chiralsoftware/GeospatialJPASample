@@ -8,6 +8,15 @@ It shows correctly defining spatial queries with JPA, plus the subtle quirks tha
 In this example we will keep a database of UFO sightings, and then find the sightings that occurred
 inside the Bermuda Triangle.
 
+# Quick run
+
+Clone or unzip the files.
+
+    mvn clean package
+    java -jar target/GeospatialJpaSample-1.0-SNAPSHOT.jar
+
+It will initialize H2, insert a couple of objects, and then find the objects within a polygon.
+
 # Some key non-obvious points
 
 Specifying locations requires creating a Geometry from a Coordinate. Specifying a polygon boundary also
